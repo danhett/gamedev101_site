@@ -57,11 +57,63 @@
             <div class="page-content inset">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="lead">TODO: software links and installation instructions for each platform</p>
-                        
-                        <p>TODO</p>
+                        <h2>You will need:</h2>
+                        <ul>
+						  <li>A computer! Almost any will do: all software used on this course is available for Windows, OSX and Linux.</li>
+						  <li>An internet connection during installation (once everything is installed you won't need a connection)</li>
+						  <li>A text editor. <a href="http://www.sublimetext.com/3">Sublime Text</a> is excellent and works on all platforms, but any plain text editor will be fine. Please note: programs like Microsoft Word are not suitable for writing code!</li>
+						</ul>
 
+						<h2>Installing Stencyl</h2>
+                        <p><i>Note: Stencyl is just for the Level 01 beginner's course - if you're on Level 02, skip straight to Haxe!</i></p>
+						<p>Stencyl is a powerful game creation tool that allows you to create videogames for the desktop, web and mobile devices. It's very easy to use and install: 
+						<ol>
+						  	<li><p>Go to the <a href="http://www.stencyl.com/download/">Stencyl website</a> and install the latest version. Stencyl is available for Windows, OSX and Linux. You should see a page similar to this, so choose your platform and install the software. </p><p><img src="img/stencyl.png"/></p></li>
+						  	<li><p>That's it! Almost. There's one setting in Stencyl we'll need to change, which will adjust the artwork size when we make games.</p></li>
+						  	<li><p>Open Stencyl, and go to File > Preferences.</p></li>
+						  	<li><p>Go to the Workspace tab, and set the Scale to be "Standard (1x)". You'll only need to do this once and Stencyl will remember the setting as long as it's installed. </p><p><img src="img/stencyl_settings.png"/></p></li>
+						</ol>
 
+						<h2>Installing Haxe/OpenFL</h2>
+						<p><a href="haxe.org">Haxe</a> is an open-source programming language, designed to let you create games and apps for almost every platform out there. <a href="http://www.openfl.org/">OpenFL</a> is a free Haxe library designed to make coding games easy and fun (OpenFL uses a tool called Lime to build projects). All three can be automatically installed by following these easy steps:</p>
+						<ol>
+							<li><p>Go to the <a href="http://www.haxe.org/download/">Haxe website</a> and install the latest version. Haxe is available for Windows, OSX and Linux. You should see a page similar to this, so choose your platform and install the software. </p><p><img src="img/haxe.png"/></p></li>
+							
+							<li><p>For our Haxe work (both installing things and actually making games), we're going to use the command line - this looks really scary if you've not done it before, but it isn't, we promise! Using the command line is the best way to install and work with many things, and Haxe is one of them. So let's jump in!</p></li>
+
+							<p>First, we'll need to open a terminal.</p> </li>
+								<p><ul>
+									<li><b>Windows users:</b> go to the Start menu, then Accessories > Command Prompt.</li>
+									<li><b>Mac users:</b> The easiest way is to click the serch box in the top right of your screen, and search for Terminal. Alternatively it's in Applications > Utilities > Terminal.</li>
+									<li><b>Linux users:</b> this will vary depending on what you're using, but you can usually search for it, or hit Ctrl + Alt + T.</li>
+								</ul></p>
+							
+							<p>Quick tip: to check that Haxe has been installed, type the following into your terminal and hit Enter: </p><p><b>haxe -version</b></b><p>If you see something like "3.1.3", then everything's worked. If not, re-install Haxe.</p>
+							
+							<li><p>Next, make sure you're connected to the internet and type:</p> <p><b>haxelib install lime</b></p>
+							<p>Your command prompt will show you the download progress, and will let you know when it's finished.</p></li>
+
+							<li><p>Repeat the previous step, but this time the command is:</p> <p><b>haxelib install lime-tools</b></p></li>
+
+							<li><p>Finally, install OpenFL by running:</p> <p><b>lime install openfl</b></p></li>
+							</p>
+						</ol>
+
+						<p>And that's it! You're ready to rock and roll. To check that everything's working, you can now grab the example projects and try them out. Please see the <a href="code.html">Code</a> page for how to do this.</p>
+
+						<h2>Optional: Installing a Haxe syntax highlighter</h2>
+						<p>Although you can edit Haxe code in any text editor, it's very useful to have your editor know what Haxe is - this lets your editor do a few clever things, like highlighting your code in different colours to make it easier to read, or auto-completing your code to help you out. This is optional, but quite useful.</p>
+						<p>Every editor does it differently, and in fact some will already have Haxe support - its worth googling to see if yours does. We recommend Sublime Text 3, as it works everywhere and plays nicely with Haxe once you add the support to it. To do this, follow these steps:</p>
+
+						<ol>
+							<li>Install Package Control by following the instructions on <a href="https://sublime.wbond.net/installation">this page.</a></li>
+							<li>Open Sublime Text and go to File > Preferences > Package Control</li>
+							<li>Select the "Install package" option from the list.</li>
+							<li>Select "haxe" from the drop-down menu (it's a long list, if you type "haxe" it'll filter for it)</li>
+							<li>Click the Haxe item to install it. When it's finished, you should see a message in the bottom corner of the Sublime editor window saying that it's been successfully installed.</li>
+							<li>Restart Sublime text, and open a Haxe file - you should now see that it has syntax colouring enabled. That's it!</li>
+
+						</ol>
                     </div>
                 </div>
             </div>
